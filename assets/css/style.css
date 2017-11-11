@@ -385,6 +385,12 @@ h6 {
     font-size: 3.5rem;
     font-weight: 300
 }
+
+.display-5 {
+    font-size: 2rem;
+    font-weight: 300
+}
+
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -4335,7 +4341,7 @@ body {
 }
 .nk-main,
 body {
-    background-color: #f6f6f6
+    background-color: #bfbfbf
 }
 .nk-main {
     position: relative;
@@ -4511,6 +4517,7 @@ h6 {
 .display-2,
 .display-3,
 .display-4,
+.display-5,
 .h1,
 .h2,
 .h3,
@@ -4538,6 +4545,9 @@ h6 {
 }
 .display-4 {
     font-size: 2.6rem
+}
+.display-5 {
+    font-size: 1.3rem
 }
 .h2,
 h2 {
@@ -4693,11 +4703,14 @@ h4 {
 .text-gray-4 {
     color: #f2f2f2!important
 }
+.text-gray-5 {
+    color: #bfbfbf!important
+}
 .bg-main-1 {
     background-color: #1140c9!important
 }
 .bg-white {
-    background-color: #fff!important
+    background-color: #F46542!important
 }
 .bg-black {
     background-color: #000!important
@@ -4715,7 +4728,7 @@ h4 {
     background-color: #444!important
 }
 .bg-gray-1 {
-    background-color: #fafafa!important
+    background-color: #F46542!important
 }
 .bg-gray-2 {
     background-color: #f7f7f7!important
@@ -7984,4 +7997,55 @@ a:hover>.nk-icon-search:after {
 .nano:hover>.nano-pane {
     visibility: visible\9;
     opacity: .99
+
+}
+
+.skill-text {
+    color: black;
+    font-size: 1rem;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: auto;
+}
+.skill-text-more {
+    color: black;
+    font-size: 1rem;
+    width: 900%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: auto;
+}
+.s-dotgroup {
+    font-size: 1rem;
+    max-width: 80%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.5rem;
+}
+
+.dot-check {
+    width: 1.2rem;
+    height: 1rem;
+    background: #607c57;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    float: left;
+    margin-left: 0.3rem;
+    position: relative;
+    margin-bottom: 10px;
+}
+.dot-uncheck {
+    width: 1.2rem;
+    height: 1rem;
+    background: #444;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    float: left;
+    margin-left: 0.2em;
+    position: relative;
+    margin-bottom: 10px;
+    opacity: 0.5;
 }
