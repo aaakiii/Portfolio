@@ -195,7 +195,7 @@ html {
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.5;
     color: #373a3c;
@@ -388,7 +388,8 @@ h6 {
 
 .display-5 {
     font-size: 2rem;
-    font-weight: 300
+    font-weight: 300;
+    text-decoration:underline;
 }
 
 hr {
@@ -3744,6 +3745,12 @@ a.text-gray-dark:hover {
 .fa-instagram:before {
     content: "\f16d"
 }
+.fa-github:before {
+    content: "\f09b"
+}
+.fa-linkedin:before {
+    content: "\f0e1"
+}
 .fa-windows:before {
     content: "\f17a"
 }
@@ -4486,7 +4493,7 @@ html {
     font-size: 15px
 }
 body {
-    font-family: Work Sans, sans-serif;
+    font-family: Playfair Display, serif;
     line-height: 1.65;
     letter-spacing: .004em;
     -webkit-font-smoothing: antialiased;
@@ -4710,7 +4717,7 @@ h4 {
     background-color: #1140c9!important
 }
 .bg-white {
-    background-color: #F46542!important
+    background-color: rgba(244,101,66,0.9)!important
 }
 .bg-black {
     background-color: #000!important
@@ -4728,7 +4735,7 @@ h4 {
     background-color: #444!important
 }
 .bg-gray-1 {
-    background-color: #F46542!important
+    background-color: rgba(244,101,66,0.9)!important
 }
 .bg-gray-2 {
     background-color: #f7f7f7!important
@@ -5583,10 +5590,10 @@ h4 {
 .nk-navbar.nk-navbar-transparent {
     background-color: transparent
 }
-.nk-navbar,
+/*.nk-navbar,
 .nk-navbar.nk-navbar-solid {
-    background-color: #F46542;
-}
+    background-color: rgba(244,101,66,0.9);
+}*/
 .nk-navbar.nk-navbar-transparent-always {
     background-color: transparent
 }
@@ -5984,7 +5991,6 @@ h4 {
 .nk-header-title {
     position: relative;
     display: block;
-    text-align: center;
     overflow: hidden;
     padding-top: 75px;
     z-index: 0
@@ -8049,4 +8055,57 @@ a:hover>.nk-icon-search:after {
     margin-bottom: 10px;
     opacity: 0.5;
 }
+.name-title {
+    text-align: right;
+}
 
+.nk-title {
+  width: 100%;
+  float: left;
+  color: #ffffff;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  transform: translateY(-50px);
+  opacity: 0;
+  animation-name: titleAnimation;
+  /*animation: slideTextFade 1.75s ease 0s 1 normal;*/
+  /*animation-timing-function: ease;*/
+  animation-duration: 3s;
+}
+.nk-title {
+  animation-delay: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+}
+.nk-title:first-child {
+  animation-delay: 0.7s;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
+  }
+
+.ul {
+  list-style:none;
+}
