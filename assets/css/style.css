@@ -3360,14 +3360,14 @@ a.text-gray-dark:hover {
 }
 .fa {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 16px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
 .fa-lg {
-    font-size: 1.33333333em;
+    font-size: 1.3333em;
     line-height: .75em;
     vertical-align: -15%
 }
@@ -4356,11 +4356,11 @@ body {
     z-index: 1
 }
 a {
-    color: #1140c9
+    color: #171717
 }
 a:focus,
 a:hover {
-    color: #0d319a
+    color: #171717
 }
 ::-moz-selection {
     color: #fff;
@@ -8059,25 +8059,47 @@ a:hover>.nk-icon-search:after {
     text-align: right;
 }
 
-.nk-title {
-  width: 100%;
-  float: left;
-  color: #ffffff;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-  transform: translateY(-50px);
-  opacity: 0;
-  animation-name: titleAnimation;
-  /*animation: slideTextFade 1.75s ease 0s 1 normal;*/
-  /*animation-timing-function: ease;*/
-  animation-duration: 3s;
+.nk-title  {
+    padding-left: 5px;
+    width: 100%;
+    float: left;
+    color: #ffffff;
 }
+
+.nk-title  {
+  animation: slideTextFade 1.75s ease 0s 1 normal;
+}
+
 .nk-title {
   animation-delay: 0.6s;
   -webkit-animation-fill-mode: forwards;
 }
 .nk-title:first-child {
   animation-delay: 0.7s;
+}
+
+
+@keyframes slideTextFade {
+  0%, 25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.forcustext {
+    font-size: 1.7rem;
+    margin: 15px 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.forcustext:hover {
+    font-size: 2rem;
+    margin-left: -50px;
+
 }
 
 @keyframes titleAnimation {
@@ -8106,6 +8128,4 @@ a:hover>.nk-icon-search:after {
     clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
   }
 
-.ul {
-  list-style:none;
-}
+
