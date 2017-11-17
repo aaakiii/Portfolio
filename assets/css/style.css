@@ -7409,10 +7409,9 @@ a:hover>.nk-icon-search:after {
     margin-bottom: 1.2rem
 }
 .nk-portfolio-list .nk-portfolio-item .portfolio-item-category {
-    font-size: .95rem;
+    font-size: 1.2rem;
     line-height: 1;
-    text-transform: uppercase;
-    font-weight: 500
+    font-weight: 700
 }
 .nk-portfolio-list .nk-portfolio-item .portfolio-item-icon {
     font-size: 3rem
