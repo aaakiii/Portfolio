@@ -5590,10 +5590,9 @@ h4 {
 .nk-navbar.nk-navbar-transparent {
     background-color: transparent
 }
-/*.nk-navbar,
-.nk-navbar.nk-navbar-solid {
+.bg-navbar {
     background-color: rgba(244,101,66,0.9);
-}*/
+}
 .nk-navbar.nk-navbar-transparent-always {
     background-color: transparent
 }
