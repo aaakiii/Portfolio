@@ -6022,8 +6022,6 @@ h4 {
 }
 .nk-header-title .nk-header-table-cell {
     display: table-cell;
-    vertical-align: middle;
-    padding: 60px 0
 }
 .nk-header-title .nk-header-text-bottom {
     padding-top: 30px;
@@ -6058,7 +6056,8 @@ h4 {
     opacity: 1
 }
 .nk-header-title h1.nk-title {
-    line-height: 1.18
+    line-height: 1.18;
+    padding-top: 160px;
 }
 .nk-footer {
     position: relative;
