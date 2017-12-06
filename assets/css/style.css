@@ -3602,6 +3602,9 @@ a.text-gray-dark:hover {
 .fa-twitter:before {
     content: "\f099"
 }
+.fa-medium:before {
+    content: "\f23a"
+}
 .fa-facebook-f:before,
 .fa-facebook:before {
     content: "\f09a"
